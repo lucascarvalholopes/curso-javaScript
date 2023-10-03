@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Cálculos</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sistema de Cálculos</h1>
+
+    <div class="form">
+      <div class="form-group">
+        <label for="medida">Medida (metros):</label>
+        <input type="number" id="medida" placeholder="Digite a medida">
+      </div>
+      
+      <div class="form-group">
+        <label for="preco">Preço por metro (R$):</label>
+        <input type="number" id="preco" placeholder="Digite o preço por metro">
+      </div>
+      
+      <div class="form-group">
+        <label for="instalacao">Tipo de Instalação:</label>
+        <select id="instalacao">
+          <option value="instalacao1">Instalação 1</option>
+          <option value="instalacao2">Instalação 2</option>
+          <!-- Adicione mais opções conforme necessário -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="valorInstalacao">Valor da Instalação (R$):</label>
+        <input type="number" id="valorInstalacao" placeholder="Digite o valor da instalação">
+      </div>
+
+      <button id="calcular">Calcular</button>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
